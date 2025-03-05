@@ -7,6 +7,7 @@ import {
   Link,
   Font,
 } from "@react-pdf/renderer";
+import type * as React from "react";
 
 Font.register({
   family: "TimesNewRoman",
@@ -46,19 +47,6 @@ const styles = StyleSheet.create({
   },
 });
 
-export const ACHIEVEMENTS = [
-  "Specialized in JavaScript/TypeScript and related technologies, I have become the go-to expert for any related problems in the workspace. (Don't get me wrong, I'm still learning)",
-  "Conducted code reviews on enterprise-level projects to ensure code quality and standards.",
-  "Engaged directly with clients to resolve requirements issues and communication gaps.",
-  "Conducted nearly 50+ interviews for various roles (Full-stack, Front-end, Back-end, DevOps, Mobile-app).",
-];
-
-export const EXTRA_CURRICULAR_ACTIVITIES = [
-  `I frequently write blogs on dev.to and posts on LinkedIn about Software Engineering, JavaScript/TypeScript, Node.js, and related topics that can benefit others. I have gained 7k+ followers on LinkedIn and achieved close to 50k impressions on dev.to.`,
-  `I stay involved in continuous learning and community conferences to remain on the cutting edge of technology.`,
-  `I consistently work on side projects to explore new technologies and ideas.`,
-];
-
 export const Section: React.FC<{
   children: React.ReactNode;
   heading: string;
@@ -91,14 +79,14 @@ export const Section: React.FC<{
 };
 
 export const Experience = ({
-  role,
+  userRole,
   company,
   from,
   to,
   achievements,
   location,
 }: {
-  role: string;
+  userRole: string;
   company: string;
   from: string;
   to: string;
@@ -113,10 +101,10 @@ export const Experience = ({
         marginVertical: "4px",
       }}
     >
-      <View>
-        <Text style={{ ...styles.text, fontWeight: "bold" }}>{role}</Text>
+      <View style={{ flex: "1" }}>
+        <Text style={{ ...styles.text, fontWeight: "bold" }}>{userRole}</Text>
         <Text style={styles.text}>{company}</Text>
-        <View style={{ paddingLeft: "5px", marginTop: "2px", gap: "2px" }}>
+        <View style={{ paddingLeft: "5px", marginTop: "5px", gap: "2px" }}>
           {achievements.map((achievement) => {
             return (
               <Text style={{ ...styles.text }} key={achievement}>
@@ -145,7 +133,7 @@ export const Skills = ({
 }) => {
   return (
     <View style={{ flexDirection: "row", gap: "16px", marginVertical: "4px" }}>
-      <View style={{ width: "80px" }}>
+      <View style={{ width: "150px" }}>
         <Text style={{ ...styles.text, fontWeight: "bold" }}>{heading}</Text>
       </View>
       <View style={{ width: "450px" }}>
@@ -187,11 +175,12 @@ export const MyDocument = () => (
 
       <Section heading="Profile">
         <Text style={styles.text}>
-          Senior Software Engineer with over 5 years of experience, specializing
-          in both backend and frontend development. Experienced in optimizing
-          processes through DevOps practices. Known for a commitment to
-          excellence and collaboration, consistently contributing to the success
-          of challenging projects.
+          Software engineer with nearly 6 years of experience specializing in
+          JavaScript, TypeScript, Golang, and Python. Expertise in full-stack
+          development, cloud services, and generative AI technologies, with a
+          strong foundation in architectural patterns and best practices. Proven
+          ability to design and implement scalable, efficient solutions using a
+          wide range of tools and frameworks.
         </Text>
       </Section>
 
@@ -210,68 +199,126 @@ export const MyDocument = () => (
       </Section>
       <Section heading="Skills">
         <Skills
-          heading="Technical Skiils"
+          heading="Programming Languages"
           skills={[
-            "JavaScript",
-            "TypeScript",
-            "Node.js",
-            "Golang",
-            "Python",
-            "PostgreSQL",
-            "MySQL",
-            "MongoDB",
-            "Firebase",
-            "Neo4J",
-            "Pinecone",
-            "Redis",
-            "GraphQL",
-            "Rest APIs",
-            "React.js",
-            "Next.js",
-            "Angular",
-            "Docker",
-            "Kubernetes",
-            "Github",
-            "Pulumi",
-            "Github Actions",
-            "Ansible",
-            "AWS",
-            "Cloudflare",
-            "GCP",
+            "JavaScript (First)",
+            "TypeScript (Primary)",
+            "Golang (Secondary)",
+            "Python (AI)",
           ]}
         />
         <Skills
-          heading="Soft Skills"
+          heading="Technical Skills"
           skills={[
-            "Communication",
-            "Leadership",
-            "Conflict Resolution",
-            "Listening",
-            "Continuous Learning",
-            "Problem Solving",
-            "Attention to Detail",
+            "Node.js",
+            "Express.js",
+            "FastAPI",
+            "Nest.js",
+            "Echo (Go)",
+            "Next.js",
+            "GraphQL",
+            "REST APIs",
+            "GraphQL",
+            "Docker & Docker Compose",
+            "WebRTC",
+            "WebSockets",
+            "Queues",
+            "gRPC",
+            "OOP",
+            "SOLID",
+            "Clean Code",
+            "Asynchronous",
+            "Multi-threading",
+            "Concurrency",
+            "MVC Architecture",
+            "Modular Architecture",
+            "Event-Driven Architecture",
+            "PubSub",
+            "Nginx",
+          ]}
+        />
+        <Skills
+          heading="Databases"
+          skills={[
+            "MongoDB",
+            "Redis",
+            "PostgreSQL",
+            "AWS DynamoDB",
+            "Pinecone",
+          ]}
+        />
+        <Skills
+          heading="Cloud Services"
+          skills={[
+            "AWS",
+            "GCP",
+            "Digital Ocean",
+            "Firebase",
+            "Supabase",
+            "Vercel",
+            "Fly.io",
+            "Render",
+            "Railway",
+            "Github Actions",
+            "Sanity",
+            "Netlify",
+            "Cloudinary",
+            "Sentry",
+            "LiveKit",
+            "Mux",
+            "Shopify (Storefront API)",
+          ]}
+        />
+        <Skills
+          heading="Generative AI Skills"
+          skills={[
+            "RAG",
+            "Fine Tuning",
+            "Hugging Face",
+            "Agentic Workflow",
+            "n8n",
+            "LangChain",
+            "Function Calling",
+            "Computer Use (Claude API)",
+            "MCP",
+            "ElevenLabs",
+            "OpenAI API",
+            "Ollama",
           ]}
         />
       </Section>
       <Section heading="Experience">
         <Experience
-          role="Senior Software Engineer"
-          company="Hashone Digital"
-          location="Karachi, Pakistan"
-          from="Mar 2021"
+          userRole="Software Engineer"
+          company="Pryze Inc."
+          location="On-Site"
+          from="Sep 2024"
           to="Present"
           achievements={[
-            "Initiated a full-stack development department in the company.",
-            "Built a team of 14 high-performing full-stack engineers, enabling the department to bid on and win highly rewarding projects.",
-            "Led training sessions on full-stack development (TypeScript-based) to enhance the team's capabilities to handle complex, data-intensive, and GenAI projects efficiently.",
-            "Served as a key person to help scale out a backend system to 100k monthly users (gradually).",
-            "Successfully secured complex and highly rewarding projects for the company through deep expertise and effective communication with technical clients.",
-            "Serving as a core team member.",
+            "Reduce cloud bills (AWS) by 50% through efficient utilization of services while cutting unnecessary services.",
+            "Build release management system for APK distribution.",
+            "Integrated MMP to track users across platform.",
+            "Reduce App load time by 90% through building a system that automatically optimizes assets and compresses all of them into a zip file.",
+            "Build a admin portal to control everything related to app.",
+            "Build an advanced popup management system.",
           ]}
         />
 
         <Experience
-          role="Software Engineer"
+          userRole="Team Lead / Software Engineer"
+          company="Hashone Digital"
+          location="On-Site"
+          from="Mar 2021"
+          to="Sep 2024"
+          achievements={[
+            "Built a team of 14 high-performing full-stack engineers, enabling the department to bid on and win highly rewarding projects.",
+            "Led training sessions on full-stack development (TypeScript-based) to enhance the team's capabilities to handle complex, data-intensive, and GenAI projects efficiently.",
+            "Successfully secured complex and highly rewarding projects for the company through deep expertise and effective communication with technical clients.",
+          ]}
+        />
+
+        <Experience
+          userRole="Software Engineer"
           company="Freelance"
           location="Remote"
           from="Jul 2019"
@@ -279,27 +326,8 @@ export const MyDocument = () => (
           achievements={[
             "Converting Figma or Adobe XD design into fully-functional web apps.",
             "Building REST and GraphQL APIs.",
-            "Deploying web applications to AWS, Digital Ocean etc.",
           ]}
         />
-      </Section>
-      <Section heading="Achievements">
-        <View style={{ gap: "4px", flexDirection: "column" }}>
-          {ACHIEVEMENTS.map((achievement) => {
-            return <Text style={styles.text}>&bull; {achievement}</Text>;
-          })}
-        </View>
-      </Section>
-      <Section heading="Extra-Curricular Activities">
-        <View style={{ gap: "4px", flexDirection: "column" }}>
-          {EXTRA_CURRICULAR_ACTIVITIES.map((activities) => {
-            return (
-              <Text key={activities} style={styles.text}>
-                &bull; {activities}
-              </Text>
-            );
-          })}
-        </View>
       </Section>
     </Page>
   </Document>
