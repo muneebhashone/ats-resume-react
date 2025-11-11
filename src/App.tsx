@@ -1,5 +1,5 @@
 import { PDFViewer } from "@react-pdf/renderer";
-import { MyDocument } from "./resume/Documen";
+import { MyDocument } from "./resume/Document";
 
 function App() {
   return (

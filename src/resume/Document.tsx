@@ -45,7 +45,18 @@ const styles = StyleSheet.create({
   text: {
     fontSize: "12px",
   },
+  textBold: {
+    fontSize: "12px",
+    fontWeight: "bold",
+  },
+  rowWithGap: {
+    flexDirection: "row",
+    gap: "4px",
+    marginTop: "4px",
+  },
 });
+
+const Separator = () => <Text style={styles.text}>|</Text>;
 
 export const Section: React.FC<{
   children: React.ReactNode;
@@ -102,12 +113,12 @@ export const Experience = ({
       }}
     >
       <View style={{ flex: "1" }}>
-        <Text style={{ ...styles.text, fontWeight: "bold" }}>{userRole}</Text>
+        <Text style={styles.textBold}>{userRole}</Text>
         <Text style={styles.text}>{company}</Text>
         <View style={{ paddingLeft: "5px", marginTop: "5px", gap: "2px" }}>
           {achievements.map((achievement) => {
             return (
-              <Text style={{ ...styles.text }} key={achievement}>
+              <Text style={styles.text} key={achievement}>
                 &bull; {achievement}
               </Text>
             );
@@ -134,10 +145,60 @@ export const Skills = ({
   return (
     <View style={{ flexDirection: "row", gap: "16px", marginVertical: "4px" }}>
       <View style={{ width: "150px" }}>
-        <Text style={{ ...styles.text, fontWeight: "bold" }}>{heading}</Text>
+        <Text style={styles.textBold}>{heading}</Text>
       </View>
       <View style={{ width: "450px" }}>
-        <Text style={{ ...styles.text }}>{skills.join(", ")}</Text>
+        <Text style={styles.text}>{skills.join(", ")}</Text>
+      </View>
+    </View>
+  );
+};
+
+export const Project = ({
+  name,
+  description,
+  stats,
+  features,
+  githubLink,
+  websiteLink,
+}: {
+  name: string;
+  description: string;
+  stats?: string;
+  features: string[];
+  githubLink: string;
+  websiteLink?: string;
+}) => {
+  return (
+    <View style={{ marginVertical: "4px" }}>
+      <View style={{ flexDirection: "row", gap: "8px", alignItems: "center" }}>
+        <Text style={styles.textBold}>{name}</Text>
+        {stats && (
+          <Text style={styles.text}>({stats})</Text>
+        )}
+      </View>
+      <Text style={styles.text}>{description}</Text>
+      <View style={{ paddingLeft: "5px", marginTop: "5px", gap: "2px" }}>
+        {features.map((feature) => {
+          return (
+            <Text style={styles.text} key={feature}>
+              &bull; {feature}
+            </Text>
+          );
+        })}
+      </View>
+      <View style={{ flexDirection: "row", gap: "8px", marginTop: "5px" }}>
+        <Text style={styles.text}>
+          <Link href={githubLink}>GitHub</Link>
+        </Text>
+        {websiteLink && (
+          <>
+            <Text style={styles.text}>|</Text>
+            <Text style={styles.text}>
+              <Link href={websiteLink}>Project Website</Link>
+            </Text>
+          </>
+        )}
       </View>
     </View>
   );
@@ -149,25 +210,31 @@ export const MyDocument = () => (
     <Page size="A4" style={styles.page}>
       <View style={styles.introSection}>
         <Text style={styles.heading}>Muneeb Hussain</Text>
-        <View style={{ flexDirection: "row", gap: "4px", marginTop: "4px" }}>
+        <View style={styles.rowWithGap}>
           <Text style={styles.text}>+92-336-3380567</Text>
-          <Text style={styles.text}>|</Text>
+          <Separator />
           <Text style={styles.text}>Karachi, Pakistan</Text>
         </View>
-        <View style={{ flexDirection: "row", gap: "4px", marginTop: "4px" }}>
+        <View style={styles.rowWithGap}>
           <Text style={styles.text}>
             <Link href="mailto:themuneebh@gmail.com">themuneebh@gmail.com</Link>
           </Text>
-          <Text style={styles.text}>|</Text>
+          <Separator />
           <Text style={styles.text}>
             <Link href="https://www.linkedin.com/in/muneebhussainmodi">
               linkedin.com/in/muneebhussainmodi
             </Link>
           </Text>
-          <Text style={styles.text}>|</Text>
+          <Separator />
           <Text style={styles.text}>
             <Link href="https://github.com/muneebhashone">
               github.com/muneebhashone
+            </Link>
+          </Text>
+          <Separator />
+          <Text style={styles.text}>
+            <Link href="https://themuneebh.com">
+              themuneebh.com
             </Link>
           </Text>
         </View>
@@ -201,10 +268,9 @@ export const MyDocument = () => (
         <Skills
           heading="Programming Languages"
           skills={[
-            "JavaScript (First)",
-            "TypeScript (Primary)",
-            "Golang (Secondary)",
-            "Python (AI)",
+            "JavaScript/TypeScript",
+            "Golang",
+            "Python",
           ]}
         />
         <Skills
@@ -216,7 +282,6 @@ export const MyDocument = () => (
             "Nest.js",
             "Echo (Go)",
             "Next.js",
-            "GraphQL",
             "REST APIs",
             "GraphQL",
             "Docker & Docker Compose",
@@ -224,16 +289,6 @@ export const MyDocument = () => (
             "WebSockets",
             "Queues",
             "gRPC",
-            "OOP",
-            "SOLID",
-            "Clean Code",
-            "Asynchronous",
-            "Multi-threading",
-            "Concurrency",
-            "MVC Architecture",
-            "Modular Architecture",
-            "Event-Driven Architecture",
-            "PubSub",
             "Nginx",
           ]}
         />
@@ -251,22 +306,11 @@ export const MyDocument = () => (
           heading="Cloud Services"
           skills={[
             "AWS",
+            "Azure",
             "GCP",
             "Digital Ocean",
             "Firebase",
             "Supabase",
-            "Vercel",
-            "Fly.io",
-            "Render",
-            "Railway",
-            "Github Actions",
-            "Sanity",
-            "Netlify",
-            "Cloudinary",
-            "Sentry",
-            "LiveKit",
-            "Mux",
-            "Shopify (Storefront API)",
           ]}
         />
         <Skills
@@ -276,24 +320,51 @@ export const MyDocument = () => (
             "Fine Tuning",
             "Hugging Face",
             "Agentic Workflow",
+            "Open Source LLMs",
             "n8n",
             "LangChain",
-            "Function Calling",
-            "Computer Use (Claude API)",
             "MCP",
-            "ElevenLabs",
-            "OpenAI API",
+            "OpenAI Compatible SDK",
             "Ollama",
           ]}
         />
       </Section>
+      <Section heading="Open Source Projects">
+        <Project
+          name="TypeScript Backend Toolkit"
+          stats="312+ GitHub stars"
+          description="Production-ready Express.js/TypeScript framework with auto-generated OpenAPI, Artisan-style CLI, plugin system, and enterprise features"
+          features={[
+            "Auto-generated OpenAPI documentation and Django-style admin dashboard",
+            "Plugin-based architecture for modular feature development",
+            "CLI scaffolding system (Artisan-like) for rapid development",
+            "JWT authentication, BullMQ queues, React Email, and Socket.io integration",
+          ]}
+          githubLink="https://github.com/muneebhashone/typescript-backend-toolkit"
+          websiteLink="https://tstoolkit.themuneebh.com"
+        />
+      </Section>
       <Section heading="Experience">
         <Experience
-          userRole="Software Engineer"
+          userRole="Head of Engineering"
+          company="Hashone Global"
+          location="On-Site"
+          from="Aug 2025"
+          to="Present"
+          achievements={[
+            "Oversee all engineering operations including architecture, development, and infrastructure with strategic focus on AI integration.",
+            "Build and lead engineering teams to deliver scalable solutions across web, mobile, and AI-driven products.",
+            "Design and implement AI-powered features using LLMs, RAG, and agentic workflows to enhance product capabilities.",
+            "Establish technical standards and best practices for full-stack development and AI implementations.",
+          ]}
+        />
+
+        <Experience
+          userRole="Software Engineer" 
           company="Pryze Inc."
           location="On-Site"
           from="Sep 2024"
-          to="Present"
+          to="Aug 2025"
           achievements={[
             "Reduce cloud bills (AWS) by 50% through efficient utilization of services while cutting unnecessary services.",
             "Build release management system for APK distribution.",
