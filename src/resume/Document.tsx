@@ -10,14 +10,14 @@ import {
 import type * as React from "react";
 
 Font.register({
-  family: "TimesNewRoman",
+  family: "Inter",
   fonts: [
     {
-      src: "src/times-new-roman.ttf",
+      src: "src/Inter-Regular.ttf",
       fontWeight: "normal",
     },
     {
-      src: "src/times-new-roman-bold.ttf",
+      src: "src/Inter-Bold.ttf",
       fontWeight: "bold",
     },
   ],
@@ -26,10 +26,10 @@ Font.register({
 // Create styles
 const styles = StyleSheet.create({
   page: {
-    backgroundColor: "#E4E4E4",
+    backgroundColor: "#FFFFFF",
     paddingVertical: "10px",
     paddingHorizontal: "24px",
-    fontFamily: "TimesNewRoman",
+    fontFamily: "Inter",
   },
   introSection: {
     flexDirection: "column",
@@ -39,20 +39,20 @@ const styles = StyleSheet.create({
   },
   heading: {
     textAlign: "center",
-    fontSize: "24px",
+    fontSize: "18px",
     fontWeight: "bold",
   },
   text: {
-    fontSize: "12px",
+    fontSize: "9.5px",
   },
   textBold: {
-    fontSize: "12px",
+    fontSize: "9.5px",
     fontWeight: "bold",
   },
   rowWithGap: {
     flexDirection: "row",
     gap: "4px",
-    marginTop: "4px",
+    marginTop: "3px",
   },
 });
 
@@ -64,20 +64,20 @@ export const Section: React.FC<{
 }> = ({ children, heading }) => {
   return (
     <View
-      style={{ alignItems: "flex-start", marginTop: "12px", width: "100%" }}
+      style={{ alignItems: "flex-start", marginTop: "8px", width: "100%" }}
     >
       <View
         style={{
           borderBottom: "1px solid black",
           width: "100%",
-          marginBottom: "3px",
-          paddingBottom: "3px",
+          marginBottom: "2px",
+          paddingBottom: "2px",
         }}
       >
         <Text
           style={{
             textTransform: "uppercase",
-            fontSize: "12px",
+            fontSize: "9.5px",
             fontWeight: "bold",
           }}
         >
@@ -109,13 +109,13 @@ export const Experience = ({
       style={{
         flexDirection: "row",
         justifyContent: "space-between",
-        marginVertical: "4px",
+        marginVertical: "2px",
       }}
     >
       <View style={{ flex: "1" }}>
         <Text style={styles.textBold}>{userRole}</Text>
         <Text style={styles.text}>{company}</Text>
-        <View style={{ paddingLeft: "5px", marginTop: "5px", gap: "2px" }}>
+        <View style={{ paddingLeft: "4px", marginTop: "3px", gap: "1px" }}>
           {achievements.map((achievement) => {
             return (
               <Text style={styles.text} key={achievement}>
@@ -143,11 +143,11 @@ export const Skills = ({
   skills: string[];
 }) => {
   return (
-    <View style={{ flexDirection: "row", gap: "16px", marginVertical: "4px" }}>
-      <View style={{ width: "150px" }}>
+    <View style={{ flexDirection: "row", gap: "8px", marginVertical: "2px" }}>
+      <View style={{ width: "110px", flexShrink: 0 }}>
         <Text style={styles.textBold}>{heading}</Text>
       </View>
-      <View style={{ width: "450px" }}>
+      <View style={{ flex: 1 }}>
         <Text style={styles.text}>{skills.join(", ")}</Text>
       </View>
     </View>
@@ -158,36 +158,23 @@ export const Project = ({
   name,
   description,
   stats,
-  features,
   githubLink,
   websiteLink,
 }: {
   name: string;
   description: string;
   stats?: string;
-  features: string[];
   githubLink: string;
   websiteLink?: string;
 }) => {
   return (
-    <View style={{ marginVertical: "4px" }}>
+    <View style={{ marginVertical: "2px" }}>
       <View style={{ flexDirection: "row", gap: "8px", alignItems: "center" }}>
         <Text style={styles.textBold}>{name}</Text>
-        {stats && (
-          <Text style={styles.text}>({stats})</Text>
-        )}
+        {stats && <Text style={styles.text}>({stats})</Text>}
       </View>
       <Text style={styles.text}>{description}</Text>
-      <View style={{ paddingLeft: "5px", marginTop: "5px", gap: "2px" }}>
-        {features.map((feature) => {
-          return (
-            <Text style={styles.text} key={feature}>
-              &bull; {feature}
-            </Text>
-          );
-        })}
-      </View>
-      <View style={{ flexDirection: "row", gap: "8px", marginTop: "5px" }}>
+      <View style={{ flexDirection: "row", gap: "8px", marginTop: "2px" }}>
         <Text style={styles.text}>
           <Link href={githubLink}>GitHub</Link>
         </Text>
@@ -225,7 +212,8 @@ export const MyDocument = () => (
               linkedin.com/in/muneebhussainmodi
             </Link>
           </Text>
-          <Separator />
+        </View>
+        <View style={styles.rowWithGap}>
           <Text style={styles.text}>
             <Link href="https://github.com/muneebhashone">
               github.com/muneebhashone
@@ -233,45 +221,139 @@ export const MyDocument = () => (
           </Text>
           <Separator />
           <Text style={styles.text}>
-            <Link href="https://themuneebh.com">
-              themuneebh.com
-            </Link>
+            <Link href="https://themuneebh.com">themuneebh.com</Link>
           </Text>
         </View>
       </View>
 
       <Section heading="Profile">
         <Text style={styles.text}>
-          Software engineer with nearly 6 years of experience specializing in
-          JavaScript, TypeScript, Golang, and Python. Expertise in full-stack
-          development, cloud services, and generative AI technologies, with a
-          strong foundation in architectural patterns and best practices. Proven
-          ability to design and implement scalable, efficient solutions using a
-          wide range of tools and frameworks.
+          Engineering leader with 7 years of experience building scalable
+          backend systems and leading high-performing teams. Specialized in
+          TypeScript, Golang, and Python with deep expertise in backend
+          architecture, performance optimization, and cloud infrastructure.
+          Track record of reducing infrastructure costs, improving system
+          reliability, and shipping production systems handling millions of
+          daily events. Pragmatic AI practitioner focused on practical LLM
+          integration, agentic workflows, and developer tooling. Early adopter of
+          agentic coding tools including Cursor, Claude Code, and Codex. Open
+          source contributor with 360+ GitHub stars.
         </Text>
       </Section>
 
-      <Section heading="Education">
-        <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-          <View>
-            <Text style={styles.text}>
-              Matriculation (Computer Science) - Board of Secondary Education
-              Karachi
-            </Text>
-          </View>
-          <View>
-            <Text style={styles.text}>2017</Text>
-          </View>
+      <Section heading="Experience">
+        <Experience
+          userRole="Head of Engineering"
+          company="Hashone Global"
+          location="On-Site"
+          from="Aug 2025"
+          to="Present"
+          achievements={[
+            "Oversee engineering operations across web, mobile, and AI products for a 200+ person digital agency serving global clients",
+            "Architect and deliver scalable backend systems achieving 98.5%+ uptime and handling 500K+ daily API calls",
+            "Design AI-powered features using LLMs, RAG, and agentic workflows — reduced manual processing with 92% automation success rate",
+            "Establish technical standards and CI/CD practices for full-stack development across 14+ engineers",
+          ]}
+        />
+
+        <Experience
+          userRole="Software Engineer"
+          company="Pryze Inc."
+          location="On-Site"
+          from="Sep 2024"
+          to="Aug 2025"
+          achievements={[
+            "Reduced AWS cloud costs by 50% for Pryze.io — Pakistan's first mobile gaming tournament platform (50K+ downloads).",
+            "Built release management system for APK distribution and an admin portal for full app configuration control.",
+            "Integrated MMP to track users across platform.",
+            "Reduced app load time by 90% by building an automated asset optimization and compression pipeline.",
+          ]}
+        />
+
+        <Experience
+          userRole="Team Lead"
+          company="Hashone Digital"
+          location="On-Site"
+          from="Feb 2023"
+          to="Sep 2024"
+          achievements={[
+            "Spearheaded R&D efforts, system design, and application architecture for complex client projects",
+            "Built and led a team of 14 high-performing full-stack engineers, enabling the department to win highly rewarding projects",
+            "Led training sessions on full-stack TypeScript development to handle complex, data-intensive, and GenAI projects",
+            "Implemented robust CI/CD pipelines and established engineering best practices",
+          ]}
+        />
+
+        <Experience
+          userRole="Software Engineer"
+          company="Hashone Digital"
+          location="On-Site"
+          from="Mar 2021"
+          to="Feb 2023"
+          achievements={[
+            "Built real-time systems achieving 35% latency reduction and 98.5% uptime for live streaming platforms",
+            "Developed IoT data pipelines processing 2M+ daily events with 850ms P95 latency",
+            "Architected e-commerce checkout systems reducing errors by 40% and handling 8K+ monthly orders",
+            "Built REST and GraphQL APIs with Node.js, Express.js, and TypeScript",
+          ]}
+        />
+
+        <Experience
+          userRole="Software Engineer"
+          company="Freelance"
+          location="Remote"
+          from="Jul 2019"
+          to="Mar 2021"
+          achievements={[
+            "Converted Figma and Adobe XD designs into fully-functional web applications.",
+            "Built REST and GraphQL APIs.",
+          ]}
+        />
+      </Section>
+
+      <Section heading="Notable Projects">
+        <View style={{ gap: "2px" }}>
+          <Text style={styles.text}>
+            <Text style={styles.textBold}>Pryze.io</Text> — Pakistan's first
+            mobile gaming tournament platform (50K+ downloads). Led backend
+            operations including AWS optimization, release management, and asset
+            pipelines.
+          </Text>
+          <Text style={styles.text}>
+            <Text style={styles.textBold}>CasperEdge</Text> — AI-powered CASPer
+            test prep platform with real-time learning analytics and
+            subscription management.
+          </Text>
+          <Text style={styles.text}>
+            <Text style={styles.textBold}>JustBeMe AI Twin</Text> —
+            Conversational AI system replicating user communication across
+            digital channels using LLMs.
+          </Text>
+          <Text style={styles.text}>
+            <Text style={styles.textBold}>Make Movie AI</Text> — AI content
+            creation platform with Text-to-Image and Text-to-Video generation.
+          </Text>
+          <Text style={styles.text}>
+            <Text style={styles.textBold}>Talky Walky</Text> — English language
+            learning platform using AI-driven conversational practice.
+          </Text>
         </View>
       </Section>
+
+      <Section heading="Open Source Projects">
+        <Project
+          name="TypeScript Backend Toolkit"
+          stats="319+ GitHub stars"
+          description="Production-ready Express.js/TypeScript framework with auto-generated OpenAPI, Artisan-style CLI, plugin system, and AI-agent compatible enterprise features"
+          githubLink="https://github.com/muneebhashone/typescript-backend-toolkit"
+          websiteLink="https://tstoolkit.themuneebh.com"
+        />
+      </Section>
+
       <Section heading="Skills">
         <Skills
           heading="Programming Languages"
-          skills={[
-            "JavaScript/TypeScript",
-            "Golang",
-            "Python",
-          ]}
+          skills={["JavaScript/TypeScript", "Golang", "Python"]}
         />
         <Skills
           heading="Technical Skills"
@@ -287,9 +369,12 @@ export const MyDocument = () => (
             "Docker & Docker Compose",
             "WebRTC",
             "WebSockets",
+            "BullMQ",
+            "Socket.io",
             "Queues",
             "gRPC",
             "Nginx",
+            "Grafana",
           ]}
         />
         <Skills
@@ -299,6 +384,7 @@ export const MyDocument = () => (
             "Redis",
             "PostgreSQL",
             "AWS DynamoDB",
+            "TimescaleDB",
             "Pinecone",
           ]}
         />
@@ -326,77 +412,9 @@ export const MyDocument = () => (
             "MCP",
             "OpenAI Compatible SDK",
             "Ollama",
-          ]}
-        />
-      </Section>
-      <Section heading="Open Source Projects">
-        <Project
-          name="TypeScript Backend Toolkit"
-          stats="312+ GitHub stars"
-          description="Production-ready Express.js/TypeScript framework with auto-generated OpenAPI, Artisan-style CLI, plugin system, and enterprise features"
-          features={[
-            "Auto-generated OpenAPI documentation and Django-style admin dashboard",
-            "Plugin-based architecture for modular feature development",
-            "CLI scaffolding system (Artisan-like) for rapid development",
-            "JWT authentication, BullMQ queues, React Email, and Socket.io integration",
-          ]}
-          githubLink="https://github.com/muneebhashone/typescript-backend-toolkit"
-          websiteLink="https://tstoolkit.themuneebh.com"
-        />
-      </Section>
-      <Section heading="Experience">
-        <Experience
-          userRole="Head of Engineering"
-          company="Hashone Global"
-          location="On-Site"
-          from="Aug 2025"
-          to="Present"
-          achievements={[
-            "Oversee all engineering operations including architecture, development, and infrastructure with strategic focus on AI integration.",
-            "Build and lead engineering teams to deliver scalable solutions across web, mobile, and AI-driven products.",
-            "Design and implement AI-powered features using LLMs, RAG, and agentic workflows to enhance product capabilities.",
-            "Establish technical standards and best practices for full-stack development and AI implementations.",
-          ]}
-        />
-
-        <Experience
-          userRole="Software Engineer" 
-          company="Pryze Inc."
-          location="On-Site"
-          from="Sep 2024"
-          to="Aug 2025"
-          achievements={[
-            "Reduce cloud bills (AWS) by 50% through efficient utilization of services while cutting unnecessary services.",
-            "Build release management system for APK distribution.",
-            "Integrated MMP to track users across platform.",
-            "Reduce App load time by 90% through building a system that automatically optimizes assets and compresses all of them into a zip file.",
-            "Build a admin portal to control everything related to app.",
-            "Build an advanced popup management system.",
-          ]}
-        />
-
-        <Experience
-          userRole="Team Lead / Software Engineer"
-          company="Hashone Digital"
-          location="On-Site"
-          from="Mar 2021"
-          to="Sep 2024"
-          achievements={[
-            "Built a team of 14 high-performing full-stack engineers, enabling the department to bid on and win highly rewarding projects.",
-            "Led training sessions on full-stack development (TypeScript-based) to enhance the team's capabilities to handle complex, data-intensive, and GenAI projects efficiently.",
-            "Successfully secured complex and highly rewarding projects for the company through deep expertise and effective communication with technical clients.",
-          ]}
-        />
-
-        <Experience
-          userRole="Software Engineer"
-          company="Freelance"
-          location="Remote"
-          from="Jul 2019"
-          to="Mar 2021"
-          achievements={[
-            "Converting Figma or Adobe XD design into fully-functional web apps.",
-            "Building REST and GraphQL APIs.",
+            "Cursor",
+            "Claude Code",
+            "Codex",
           ]}
         />
       </Section>
