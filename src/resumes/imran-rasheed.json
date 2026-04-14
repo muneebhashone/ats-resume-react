@@ -1,0 +1,66 @@
+{
+  "slug": "imran-rasheed",
+  "personalInfo": {
+    "name": "Imran Rasheed",
+    "designation": "Frontend Developer",
+    "location": "Karachi, Pakistan"
+  },
+  "profile": "Frontend Developer with over 5 years of experience crafting high-performance, accessible user interfaces for SaaS and B2B products. Built and shipped 10+ production applications using React, Next.js, and TypeScript with consistently strong Lighthouse performance scores. Designed and maintained reusable component libraries adopted across multiple product teams, reducing frontend development time by 30%. Implemented AI-powered chat interfaces and real-time collaboration features using WebSocket connections. Delivered pixel-perfect, responsive designs with WCAG 2.1 AA compliance, significantly reducing user-reported UI issues across projects.",
+  "projectsHeading": "Key Projects",
+  "education": [],
+  "skills": [
+    {
+      "heading": "Frontend Frameworks",
+      "skills": ["React", "Next.js", "Vue.js", "Nuxt.js", "TypeScript"]
+    },
+    {
+      "heading": "UI & Design Systems",
+      "skills": ["Tailwind CSS", "Shadcn/UI", "Radix UI", "Framer Motion", "Storybook"]
+    },
+    {
+      "heading": "State & Data Management",
+      "skills": ["TanStack Query", "Zustand", "Redux Toolkit", "SWR", "React Hook Form"]
+    },
+    {
+      "heading": "Build & Performance",
+      "skills": ["Vite", "Webpack", "Lighthouse Optimization", "Code Splitting", "PWA"]
+    },
+    {
+      "heading": "AI-Powered UI",
+      "skills": ["Vercel AI SDK", "Streaming Chat Interfaces", "Real-Time Collaboration", "WebRTC"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "MakeMovie.ai – AI Multimedia Studio",
+      "description": "Full creative dashboard for generating AI-powered images, videos, avatars, fashion edits, and chat-assisted workflows from text prompts.",
+      "features": [
+        "Built the interactive creative dashboard with real-time preview, drag-and-drop workflows, and responsive design",
+        "Implemented streaming chat interface for AI-assisted creative workflows with live generation progress",
+        "Designed and developed reusable component library for media editors, galleries, and prompt builders",
+        "Optimized frontend performance for handling large media assets with lazy loading and progressive rendering"
+      ]
+    },
+    {
+      "name": "Motivational Alarm App",
+      "description": "AI-powered alarm that generates motivational stories (quotes + images) based on personal goals, using eye-detection to ensure the user is fully awake.",
+      "features": [
+        "Developed the mobile-responsive UI for alarm configuration, goal setting, and story consumption",
+        "Built interactive eye-detection feedback interface with real-time camera integration and visual cues",
+        "Implemented animated transitions and micro-interactions for the motivational content display experience",
+        "Created responsive layouts for DALL-E generated images with dynamic content adaptation"
+      ]
+    },
+    {
+      "name": "Tales of You – Personalized Storybook Generator",
+      "description": "AI storytelling platform turning selfies and prompts into personalized children's storybooks with custom characters, narration, and interactive flipbook reading.",
+      "features": [
+        "Built the interactive flipbook reading experience with page animations, narration sync, and touch gestures",
+        "Developed the storybook creation wizard with multi-step forms, image upload, and real-time character preview",
+        "Implemented responsive design across devices for the storytelling and reading experiences",
+        "Integrated Stripe checkout flow with seamless frontend payment and order confirmation UI"
+      ]
+    }
+  ],
+  "experience": []
+}

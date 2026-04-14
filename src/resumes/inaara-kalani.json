@@ -1,0 +1,66 @@
+{
+  "slug": "inaara-kalani",
+  "personalInfo": {
+    "name": "Inaara Kalani",
+    "designation": "Support Engineer",
+    "location": "Karachi, Pakistan"
+  },
+  "profile": "Support Engineer with over 5 years of experience in technical troubleshooting, customer operations, and support infrastructure for SaaS and B2B platforms. Managed support operations across multiple enterprise products, maintaining strong customer satisfaction scores and consistent SLA compliance. Specializes in API integration issues, communication platform debugging, and AI product troubleshooting with a high first-contact resolution rate. Built comprehensive knowledge bases that reduced inbound ticket volume by 30% and improved average resolution time. Implemented AI-assisted triage workflows using n8n and ChatGPT integration to automate ticket categorization and routing. Experienced in onboarding and training enterprise clients across multi-region deployments.",
+  "projectsHeading": "Key Projects",
+  "education": [],
+  "skills": [
+    {
+      "heading": "Support & Ticketing",
+      "skills": ["Zendesk", "Freshdesk", "Intercom", "Jira Service Management", "PagerDuty"]
+    },
+    {
+      "heading": "Technical Debugging",
+      "skills": ["Browser DevTools", "Postman", "Log Analysis", "SQL Queries", "API Troubleshooting"]
+    },
+    {
+      "heading": "Communication Platforms",
+      "skills": ["Slack", "Microsoft Teams", "Twilio", "WhatsApp Business API", "Webhooks"]
+    },
+    {
+      "heading": "Documentation & Knowledge",
+      "skills": ["Confluence", "Notion", "Markdown", "Runbook Authoring", "Internal Wikis"]
+    },
+    {
+      "heading": "AI & Automation",
+      "skills": ["ChatGPT Integration", "Automated Triage Workflows", "Sentiment Analysis", "n8n"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Talky Walky – AI English Practice",
+      "description": "Language-learning platform where students practice English with an AI tutor, while teachers can review transcripts, add feedback, or join conversations.",
+      "features": [
+        "Managed user onboarding support and troubleshooting for students and teachers across the platform",
+        "Built comprehensive help documentation and FAQ knowledge bases for common user issues",
+        "Designed escalation workflows for conversation quality issues and AI tutor response accuracy",
+        "Implemented feedback collection pipelines for continuous improvement of the AI tutoring experience"
+      ]
+    },
+    {
+      "name": "JustBeMe.ai – AI Business Assistant",
+      "description": "AI assistant automating inbound/outbound communications across calls, WhatsApp, SMS, and email, with knowledge base answers and real-time appointment booking.",
+      "features": [
+        "Provided technical support for multi-channel communication setup (WhatsApp, SMS, voice, email) across client deployments",
+        "Built and maintained the internal knowledge base for troubleshooting AI assistant configuration issues",
+        "Designed support runbooks for handling communication failures, appointment booking errors, and API integration issues",
+        "Managed client onboarding and training for the AI assistant platform across UAE and France variants"
+      ]
+    },
+    {
+      "name": "Motivational Alarm App",
+      "description": "AI-powered alarm that generates motivational stories (quotes + images) based on personal goals, using eye-detection to ensure the user is fully awake.",
+      "features": [
+        "Provided end-user support for alarm configuration, goal setup, and eye-detection troubleshooting",
+        "Built troubleshooting guides for common issues with camera access, alarm triggers, and content generation",
+        "Managed bug reporting workflows and coordinated with engineering for issue resolution",
+        "Created user feedback collection processes for improving the motivational content experience"
+      ]
+    }
+  ],
+  "experience": []
+}

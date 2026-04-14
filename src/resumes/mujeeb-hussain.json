@@ -1,0 +1,66 @@
+{
+  "slug": "mujeeb-hussain",
+  "personalInfo": {
+    "name": "Mujeeb Hussain",
+    "designation": "Full Stack Developer",
+    "location": "Karachi, Pakistan"
+  },
+  "profile": "Full Stack Developer with over 5 years of experience in TypeScript-based web development, cloud infrastructure, and AI/LLM integration for enterprise SaaS products. Delivered 10+ production applications using React, Next.js, and Node.js with reliable uptime across AWS-hosted environments. Integrated multiple AI and voice synthesis APIs (OpenAI, ElevenLabs, Perplexity, Gemini) into customer-facing products powering multimedia generation and conversational AI features. Built asset processing pipelines with automated optimization that reduced storage costs by 25%. Designed and deployed agentic AI workflows with MCP integration, streamlining manual business processes for B2B clients. Consistently delivered features on or ahead of schedule through reusable architecture patterns and CI/CD automation.",
+  "projectsHeading": "Key Projects",
+  "education": [],
+  "skills": [
+    {
+      "heading": "Frontend",
+      "skills": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"]
+    },
+    {
+      "heading": "Backend",
+      "skills": ["Node.js", "NestJS", "Express.js", "Python (FastAPI)", "REST APIs", "GraphQL"]
+    },
+    {
+      "heading": "Databases & ORM",
+      "skills": ["PostgreSQL", "MongoDB", "Redis", "Prisma", "Mongoose", "Drizzle"]
+    },
+    {
+      "heading": "Cloud & Infrastructure",
+      "skills": ["AWS (EC2, S3, Lambda, SQS)", "Docker", "Vercel", "Nginx", "GitHub Actions"]
+    },
+    {
+      "heading": "AI & LLM",
+      "skills": ["OpenAI API", "ElevenLabs", "Perplexity API", "RAG", "Agentic Workflows", "MCP"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "MakeMovie.ai – AI Multimedia Studio",
+      "description": "Full creative dashboard for generating AI-powered images, videos, avatars, fashion edits, and chat-assisted workflows from text prompts.",
+      "features": [
+        "Built the full-stack creative platform integrating Flux 1.1, Kling v2.0, and HeyGen APIs for multimedia generation",
+        "Developed the chat-assisted workflow engine with Perplexity API for intelligent creative prompt building",
+        "Implemented real-time generation progress tracking with WebSocket-based status updates",
+        "Designed the media asset management system with cloud storage and CDN delivery"
+      ]
+    },
+    {
+      "name": "Outbound Voice Agents – Lead Calling System",
+      "description": "Automated outbound calling system that dials leads from CSV uploads, follows scripted flows, and logs call outcomes in a dashboard.",
+      "features": [
+        "Built the end-to-end calling platform from CSV upload interface to real-time call monitoring dashboard",
+        "Integrated Twilio VoIP and ElevenLabs voice synthesis for natural AI-powered outbound conversations",
+        "Developed the scripted flow engine for dynamic call branching based on lead responses",
+        "Implemented the analytics dashboard for tracking call outcomes, conversion rates, and campaign performance"
+      ]
+    },
+    {
+      "name": "Tales of You – Personalized Storybook Generator",
+      "description": "AI storytelling platform turning selfies and prompts into personalized children's storybooks with custom characters, narration, and interactive flipbook reading.",
+      "features": [
+        "Built the full-stack application with Next.js frontend and Node.js backend for story generation workflows",
+        "Integrated Google Gemini 2.5 for narrative generation and Nano Banana for custom character illustrations",
+        "Implemented Stripe payment processing for premium storybook purchases and subscriptions",
+        "Designed the AWS infrastructure (S3, CloudFront, EC2) for media storage and global content delivery"
+      ]
+    }
+  ],
+  "experience": []
+}

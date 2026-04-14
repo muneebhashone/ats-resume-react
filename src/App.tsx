@@ -1,13 +1,13 @@
-import { PDFViewer } from "@react-pdf/renderer";
-import { MyDocument } from "./resume/Document";
+import { Routes, Route } from "react-router-dom";
+import { GalleryPage } from "./pages/GalleryPage";
+import { ResumeViewerPage } from "./pages/ResumeViewerPage";
 
 function App() {
   return (
-    <div style={{ width: "100vw", height: "100vh" }}>
-      <PDFViewer width="100%" height="100%">
-        <MyDocument />
-      </PDFViewer>
-    </div>
+    <Routes>
+      <Route path="/" element={<GalleryPage />} />
+      <Route path="/resume/:slug" element={<ResumeViewerPage />} />
+    </Routes>
   );
 }
 

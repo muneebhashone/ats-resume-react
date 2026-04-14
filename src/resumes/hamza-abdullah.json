@@ -1,0 +1,56 @@
+{
+  "slug": "hamza-abdullah",
+  "personalInfo": {
+    "name": "Hamza Abdullah",
+    "designation": "CMS Developer",
+    "location": "Karachi, Pakistan"
+  },
+  "profile": "CMS Developer with over 5 years of experience building and managing content-driven platforms for SaaS and B2B enterprises. Delivered 8+ headless CMS implementations using Strapi, Contentful, Sanity.io, and Payload CMS, improving content publishing workflows and reducing editorial turnaround times by 30%. Architected Jamstack solutions with Next.js and React, achieving sub-second load times and strong Lighthouse performance scores. Integrated AI-powered content generation and SEO automation pipelines that contributed to measurable organic traffic growth for enterprise clients. Experienced in collaborating with cross-functional teams to deliver scalable, multilingual content platforms on schedule.",
+  "projectsHeading": "Key Projects",
+  "education": [],
+  "skills": [
+    {
+      "heading": "CMS & Content Platforms",
+      "skills": ["WordPress", "Strapi", "Contentful", "Sanity.io", "Payload CMS", "Prismic"]
+    },
+    {
+      "heading": "Frontend Technologies",
+      "skills": ["Next.js", "React", "Tailwind CSS", "TypeScript", "Headless UI"]
+    },
+    {
+      "heading": "Backend & APIs",
+      "skills": ["Node.js", "REST APIs", "GraphQL", "Webhooks", "tRPC"]
+    },
+    {
+      "heading": "Cloud & Deployment",
+      "skills": ["Vercel", "AWS S3", "CloudFront", "Docker", "CI/CD Pipelines"]
+    },
+    {
+      "heading": "AI & Content Intelligence",
+      "skills": ["OpenAI API", "Gemini", "AI-Powered Content Generation", "SEO Automation"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Tales of You – Personalized Storybook Generator",
+      "description": "AI storytelling platform turning selfies and prompts into personalized children's storybooks with custom characters, narration, and interactive flipbook reading.",
+      "features": [
+        "Built and maintained the CMS layer powering dynamic content management for storybook templates and user-generated narratives",
+        "Integrated headless CMS architecture with Next.js for server-side rendering and SEO-optimized content delivery",
+        "Implemented Stripe payment integration and content gating for premium storybook features",
+        "Managed media assets pipeline using AWS S3 and CloudFront for global content distribution"
+      ]
+    },
+    {
+      "name": "JustBeMe.ai – AI Business Assistant",
+      "description": "AI assistant automating inbound/outbound communications across calls, WhatsApp, SMS, and email, with knowledge base answers and real-time appointment booking.",
+      "features": [
+        "Developed and structured the knowledge base content management system for AI-driven responses",
+        "Built content workflows for managing WhatsApp and SMS templates across multiple client variants (UAE, France)",
+        "Implemented CMS-driven configuration for appointment booking flows with Google Calendar integration",
+        "Created admin interfaces for managing communication templates and AI assistant behavior"
+      ]
+    }
+  ],
+  "experience": []
+}

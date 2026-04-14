@@ -1,0 +1,66 @@
+{
+  "slug": "owais-ahmed",
+  "personalInfo": {
+    "name": "Owais Ahmed",
+    "designation": "QA Test Engineer",
+    "location": "Karachi, Pakistan"
+  },
+  "profile": "QA Test Engineer with over 5 years of experience in end-to-end test automation, API testing, and quality assurance for enterprise SaaS and AI-powered products. Built and maintained automated test suites across 8+ production applications, achieving strong code coverage and catching the majority of bugs before production release. Designed CI/CD-integrated test pipelines using Cypress, Playwright, and Pytest that significantly reduced regression testing time. Implemented load testing frameworks to identify performance bottlenecks and validate system behavior under stress. Developed LLM output validation frameworks for ensuring AI response quality across customer-facing applications. Reduced production defect escape rate through shift-left testing practices and automated quality gates.",
+  "projectsHeading": "Key Projects",
+  "education": [],
+  "skills": [
+    {
+      "heading": "Test Automation",
+      "skills": ["Cypress", "Playwright", "Selenium", "Jest", "Vitest", "Pytest"]
+    },
+    {
+      "heading": "API Testing",
+      "skills": ["Postman", "REST Assured", "GraphQL Testing", "Load Testing (k6, Artillery)"]
+    },
+    {
+      "heading": "CI/CD Integration",
+      "skills": ["GitHub Actions", "Jenkins Pipelines", "Docker Test Environments", "Parallel Testing"]
+    },
+    {
+      "heading": "QA Methodologies",
+      "skills": ["BDD (Cucumber)", "TDD", "Regression Testing", "UAT", "Accessibility Audits"]
+    },
+    {
+      "heading": "AI-Assisted QA",
+      "skills": ["AI Test Generation", "Visual Regression Testing", "Automated Bug Triaging", "LLM Output Validation"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "ID Area – Identity Verification",
+      "description": "Automated KYC platform handling document scanning, OCR, face matching, liveness detection, and fingerprint verification.",
+      "features": [
+        "Designed and executed comprehensive test suites for document scanning accuracy and OCR extraction validation",
+        "Built automated testing pipelines for face matching and liveness detection with edge case coverage",
+        "Implemented biometric verification test frameworks for fingerprint matching accuracy and false-positive rates",
+        "Created regression test suites ensuring KYC compliance workflows meet regulatory accuracy thresholds"
+      ]
+    },
+    {
+      "name": "CASPer Edge – AI Interview Preparation",
+      "description": "AI-driven CASPer exam preparation platform that evaluates student responses against scenarios designed by Stanford & Harvard-trained doctors.",
+      "features": [
+        "Built end-to-end test automation for the AI evaluation engine validating scoring accuracy against expert benchmarks",
+        "Designed test frameworks for LLM output validation ensuring consistent and unbiased response evaluations",
+        "Implemented load testing for concurrent student sessions to verify platform stability under peak usage",
+        "Created UAT test plans with scenario coverage for all exam question types and edge cases"
+      ]
+    },
+    {
+      "name": "Talent Search – Natural Language Enterprise Search",
+      "description": "Recruiter tool enabling natural language queries against indexed talent databases for intelligent candidate matching.",
+      "features": [
+        "Built API test suites for search query accuracy, relevance ranking, and filter combination coverage",
+        "Designed performance test benchmarks for search response times under varying data volumes",
+        "Implemented automated regression testing for document processing and indexing pipeline reliability",
+        "Created data-driven test frameworks for validating NLP query interpretation across diverse input patterns"
+      ]
+    }
+  ],
+  "experience": []
+}

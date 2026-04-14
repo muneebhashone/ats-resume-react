@@ -1,0 +1,66 @@
+{
+  "slug": "hunain-parekh",
+  "personalInfo": {
+    "name": "Hunain Parekh",
+    "designation": "Full Stack Developer",
+    "location": "Karachi, Pakistan"
+  },
+  "profile": "Full Stack Developer with over 6 years of experience building end-to-end web applications for SaaS, B2B, and AI-driven products. Delivered 12+ production applications using React, Next.js, Node.js, and cloud services across multiple markets. Integrated third-party AI and communication APIs (OpenAI, ElevenLabs, Twilio, Deepgram) into cohesive product experiences with reliable uptime. Built real-time features using WebSockets and streaming architectures for live collaboration and communication platforms. Improved feature delivery cycles by 30% through reusable full-stack templates, CI/CD automation, and infrastructure-as-code practices on AWS.",
+  "projectsHeading": "Key Projects",
+  "education": [],
+  "skills": [
+    {
+      "heading": "Frontend",
+      "skills": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Shadcn/UI"]
+    },
+    {
+      "heading": "Backend",
+      "skills": ["Node.js", "NestJS", "Express.js", "FastAPI", "REST APIs", "GraphQL"]
+    },
+    {
+      "heading": "Databases",
+      "skills": ["PostgreSQL", "MongoDB", "Redis", "Prisma ORM", "Drizzle ORM"]
+    },
+    {
+      "heading": "Cloud & DevOps",
+      "skills": ["AWS (EC2, S3, Lambda)", "Docker", "Vercel", "GitHub Actions", "Nginx"]
+    },
+    {
+      "heading": "AI Integration",
+      "skills": ["OpenAI API", "ElevenLabs", "Deepgram", "Twilio", "Agentic Workflows"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "JustBeMe.ai – AI Business Assistant",
+      "description": "AI assistant automating inbound/outbound communications across calls, WhatsApp, SMS, and email, with knowledge base answers and real-time appointment booking.",
+      "features": [
+        "Built end-to-end communication workflows integrating Meta WhatsApp API, Twilio voice/SMS, and email services",
+        "Developed the real-time appointment booking system with Google Calendar integration and conflict resolution",
+        "Implemented the knowledge base ingestion and retrieval system for AI-powered customer responses",
+        "Built admin dashboard for managing communication channels, AI behavior, and analytics across client variants"
+      ]
+    },
+    {
+      "name": "Talky Walky – AI English Practice",
+      "description": "Language-learning platform where students practice English with an AI tutor, while teachers can review transcripts, add feedback, or join conversations.",
+      "features": [
+        "Developed the full-stack conversation interface with real-time AI tutor interactions and speech processing",
+        "Built the teacher dashboard for reviewing student transcripts, adding feedback, and monitoring progress",
+        "Implemented WebSocket-based real-time features for live teacher-student conversation joining",
+        "Designed the assessment engine for tracking student proficiency levels and generating progress reports"
+      ]
+    },
+    {
+      "name": "Sports Commentary – Real-Time Multilingual Commentary",
+      "description": "Live sports commentary system that transcribes, translates, and streams audio in multiple languages in real time.",
+      "features": [
+        "Built the full-stack real-time streaming architecture for live audio transcription and translation",
+        "Integrated Deepgram for speech-to-text and ElevenLabs for multi-language voice synthesis",
+        "Developed the frontend commentary player with language switching and live synchronization",
+        "Implemented low-latency WebSocket pipelines for real-time audio streaming across multiple channels"
+      ]
+    }
+  ],
+  "experience": []
+}

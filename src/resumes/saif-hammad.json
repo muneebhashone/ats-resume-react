@@ -1,0 +1,66 @@
+{
+  "slug": "saif-hammad",
+  "personalInfo": {
+    "name": "Saif Hammad",
+    "designation": "AI Engineer",
+    "location": "Karachi, Pakistan"
+  },
+  "profile": "AI Engineer with over 5 years of experience building and deploying production-grade machine learning and generative AI solutions for enterprise SaaS platforms. Designed and shipped RAG pipelines with strong retrieval accuracy, and fine-tuned LLMs that measurably reduced hallucination rates in customer-facing applications. Built computer vision systems for document verification and biometric matching achieving high accuracy for KYC compliance workflows. Deployed agentic AI workflows orchestrating multiple model APIs per request with sub-2s response times. Reduced ML infrastructure costs by 30% through model optimization, batching strategies, and efficient GPU utilization on AWS.",
+  "projectsHeading": "Key Projects",
+  "education": [],
+  "skills": [
+    {
+      "heading": "AI & ML Frameworks",
+      "skills": ["PyTorch", "TensorFlow", "Hugging Face Transformers", "LangChain", "LlamaIndex"]
+    },
+    {
+      "heading": "LLM & Generative AI",
+      "skills": ["OpenAI GPT-4", "Claude", "Gemini", "Fine-Tuning", "Prompt Engineering", "RAG"]
+    },
+    {
+      "heading": "Computer Vision",
+      "skills": ["YOLO", "OpenCV", "OCR (Tesseract)", "DALL-E", "Flux", "Stable Diffusion"]
+    },
+    {
+      "heading": "MLOps & Infrastructure",
+      "skills": ["Docker", "AWS SageMaker", "MLflow", "Weights & Biases", "ONNX Runtime"]
+    },
+    {
+      "heading": "Data & Vector Stores",
+      "skills": ["Pinecone", "Weaviate", "ChromaDB", "PostgreSQL (pgvector)", "Redis"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "CASPer Edge – AI Interview Preparation",
+      "description": "AI-driven CASPer exam preparation platform that evaluates student responses against scenarios designed by Stanford & Harvard-trained doctors.",
+      "features": [
+        "Designed and implemented the AI evaluation engine for scoring student responses against structured rubrics",
+        "Built prompt engineering pipelines for generating realistic scenario-based interview questions",
+        "Developed fine-tuned scoring models calibrated against expert human evaluations for accuracy",
+        "Implemented feedback generation system providing actionable improvement suggestions to students"
+      ]
+    },
+    {
+      "name": "MakeMovie.ai – AI Multimedia Studio",
+      "description": "Full creative dashboard for generating AI-powered images, videos, avatars, fashion edits, and chat-assisted workflows from text prompts.",
+      "features": [
+        "Integrated multiple AI model APIs (Flux 1.1 Ultra Pro, Kling v2.0/v1.6) for image and video generation pipelines",
+        "Built the AI chat-assisted workflow engine using Perplexity API for creative prompt refinement",
+        "Designed avatar generation and fashion editing pipelines with HeyGen integration",
+        "Optimized model inference pipelines for reduced latency and cost-efficient generation at scale"
+      ]
+    },
+    {
+      "name": "ID Area – Identity Verification",
+      "description": "Automated KYC platform handling document scanning, OCR, face matching, liveness detection, and fingerprint verification.",
+      "features": [
+        "Built the computer vision pipeline for document scanning, OCR extraction, and data validation",
+        "Implemented face matching algorithms with liveness detection to prevent spoofing attacks",
+        "Designed the fingerprint verification system with biometric template matching and scoring",
+        "Developed confidence scoring and anomaly detection models for fraud prevention in KYC workflows"
+      ]
+    }
+  ],
+  "experience": []
+}

@@ -1,30 +1,72 @@
-# React + TypeScript + Vite
+# ATS Resume Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A resume gallery and PDF generator built with React, TypeScript, and Vite. Displays professional resumes in an interactive gallery interface and generates ATS-friendly PDF documents.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Resume Gallery** — Browse resumes in a responsive grid with candidate names, roles, locations, and skill tags
+- **PDF Viewer** — View each resume as a rendered PDF in the browser
+- **PDF Download** — Download individual resumes as PDF files
+- **Batch PDF Generation** — Generate all resume PDFs via CLI script
+- **ATS-Friendly Format** — Clean layout with Times New Roman, standard sections, and machine-readable structure
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React 18** + **TypeScript** — UI framework
+- **Vite** — Build tool with HMR
+- **React Router DOM** — Client-side routing
+- **@react-pdf/renderer** — PDF generation from React components
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+# Install dependencies
+pnpm install
+
+# Start dev server
+pnpm dev
+
+# Build for production
+pnpm build
+
+# Preview production build
+pnpm preview
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## PDF Generation
+
+Generate PDFs from resume data without running the dev server:
+
+```bash
+# Generate all resume PDFs to output/
+pnpm generate
+
+# Generate a single resume PDF
+pnpm generate:one <slug>
+```
+
+## Project Structure
+
+```
+src/
+├── pages/
+│   ├── GalleryPage.tsx          # Landing page with resume grid
+│   └── ResumeViewerPage.tsx     # Individual resume PDF viewer
+├── resume/
+│   └── Document.tsx             # PDF template component
+├── resumes/
+│   ├── index.ts                 # Resume data exports
+│   └── *.json                   # Resume data files
+├── types/
+│   └── resume.ts                # TypeScript interfaces
+├── App.tsx                      # Router setup
+└── main.tsx                     # Entry point
+
+scripts/
+└── generate-pdf.tsx             # CLI script for batch PDF generation
+```
+
+## Adding a Resume
+
+1. Create a JSON file in `src/resumes/` following the `ResumeData` interface in `src/types/resume.ts`
+2. The resume will automatically appear in the gallery and be available at `/resume/<slug>`

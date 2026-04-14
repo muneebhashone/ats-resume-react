@@ -1,0 +1,66 @@
+{
+  "slug": "shakir-yasin",
+  "personalInfo": {
+    "name": "Shakir Yasin",
+    "designation": "Cloud/DevOps Engineer",
+    "location": "Karachi, Pakistan"
+  },
+  "profile": "Cloud and DevOps Engineer with over 7 years of experience designing, deploying, and managing high-availability infrastructure for enterprise SaaS and AI-powered platforms. Managed cloud environments across AWS, GCP, and Azure with strong uptime SLAs. Reduced cloud infrastructure costs by 35% through right-sizing, spot instance strategies, and automated scaling policies. Built CI/CD pipelines that decreased deployment cycles from days to under 30 minutes, enabling frequent production releases across microservice architectures. Orchestrated containerized workloads on Kubernetes with zero-downtime rolling deployments. Implemented monitoring and alerting stacks using Datadog, Grafana, and Prometheus that significantly improved mean time to detection and resolution.",
+  "projectsHeading": "Key Projects",
+  "education": [],
+  "skills": [
+    {
+      "heading": "Cloud Platforms",
+      "skills": ["AWS (EC2, ECS, Lambda, S3, CloudFront)", "GCP", "Azure", "DigitalOcean"]
+    },
+    {
+      "heading": "Infrastructure as Code",
+      "skills": ["Terraform", "Pulumi", "AWS CDK", "CloudFormation", "Ansible"]
+    },
+    {
+      "heading": "CI/CD & Automation",
+      "skills": ["GitHub Actions", "GitLab CI", "Jenkins", "ArgoCD", "Docker", "Kubernetes"]
+    },
+    {
+      "heading": "Monitoring & Observability",
+      "skills": ["Datadog", "Grafana", "Prometheus", "CloudWatch", "ELK Stack"]
+    },
+    {
+      "heading": "Security & Networking",
+      "skills": ["VPC", "IAM", "SSL/TLS", "WAF", "Secrets Management", "Nginx", "Traefik"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Dubio.ai – AI Dubbing & Voice Cloning",
+      "description": "Dubbing platform that detects speakers, clones each voice, translates dialogue, and outputs dubbed video in another language.",
+      "features": [
+        "Designed and deployed the AWS infrastructure for scalable media processing with auto-scaling compute clusters",
+        "Built CI/CD pipelines for continuous deployment of ML model services and API microservices",
+        "Implemented container orchestration for voice cloning and translation workloads using Docker and ECS",
+        "Set up monitoring and alerting for processing pipeline health, latency, and error tracking"
+      ]
+    },
+    {
+      "name": "Outbound Voice Agents – Lead Calling System",
+      "description": "Automated outbound calling system that dials leads from CSV uploads, follows scripted flows, and logs call outcomes in a dashboard.",
+      "features": [
+        "Provisioned and managed Twilio infrastructure for VoIP services with high-availability configuration",
+        "Designed the deployment architecture for the calling pipeline with queue-based workload distribution",
+        "Implemented infrastructure monitoring for call success rates, latency, and system health metrics",
+        "Built automated scaling policies for handling variable call volumes during peak campaign periods"
+      ]
+    },
+    {
+      "name": "Sports Commentary – Real-Time Multilingual Commentary",
+      "description": "Live sports commentary system that transcribes, translates, and streams audio in multiple languages in real time.",
+      "features": [
+        "Architected the low-latency streaming infrastructure for real-time audio processing across regions",
+        "Deployed containerized microservices for speech-to-text and text-to-speech with horizontal scaling",
+        "Implemented CDN and edge caching strategies for global audio stream distribution",
+        "Set up real-time monitoring dashboards for stream health, latency, and concurrent listener metrics"
+      ]
+    }
+  ],
+  "experience": []
+}

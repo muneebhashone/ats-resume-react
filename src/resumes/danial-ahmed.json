@@ -1,0 +1,66 @@
+{
+  "slug": "danial-ahmed",
+  "personalInfo": {
+    "name": "Danial Ahmed",
+    "designation": "UI/UX Designer",
+    "location": "Karachi, Pakistan"
+  },
+  "profile": "UI/UX Designer with over 5 years of experience creating user-centered interfaces for SaaS, B2B, and AI-powered products. Designed end-to-end user experiences for 10+ production applications, from research and wireframing through high-fidelity prototypes and developer handoff. Improved key product metrics including user onboarding completion rates by 25% and task completion times by 30% through data-informed design iterations. Experienced in building and maintaining design systems that ensure visual consistency across multi-product platforms. Skilled in designing intuitive interfaces for complex AI workflows, real-time dashboards, and conversational UIs that make advanced technology accessible to non-technical users.",
+  "projectsHeading": "Key Projects",
+  "education": [],
+  "skills": [
+    {
+      "heading": "Design Tools",
+      "skills": ["Figma", "Adobe XD", "Sketch", "Adobe Photoshop", "Adobe Illustrator", "Framer"]
+    },
+    {
+      "heading": "UX Research & Strategy",
+      "skills": ["User Interviews", "Usability Testing", "A/B Testing", "Heuristic Evaluation", "Journey Mapping", "Information Architecture"]
+    },
+    {
+      "heading": "UI Design & Systems",
+      "skills": ["Design Systems", "Component Libraries", "Responsive Design", "Accessibility (WCAG)", "Motion Design", "Micro-interactions"]
+    },
+    {
+      "heading": "Prototyping & Handoff",
+      "skills": ["Interactive Prototyping", "Developer Handoff", "Design Tokens", "Storybook", "Zeplin"]
+    },
+    {
+      "heading": "AI & Product Design",
+      "skills": ["Conversational UI", "Dashboard Design", "Data Visualization", "AI Prompt Interfaces", "Real-Time Collaboration UX"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "MakeMovie.ai – AI Multimedia Studio",
+      "description": "Full creative dashboard for generating AI-powered images, videos, avatars, fashion edits, and chat-assisted workflows from text prompts.",
+      "features": [
+        "Designed the end-to-end creative dashboard UX including media generation flows, prompt builders, and gallery management",
+        "Created a scalable design system with reusable components for editors, preview panels, and generation controls",
+        "Designed the chat-assisted workflow interface balancing creative freedom with guided AI interactions",
+        "Conducted usability testing and iterated on navigation patterns to reduce time-to-first-generation by 35%"
+      ]
+    },
+    {
+      "name": "JustBeMe.ai – AI Business Assistant",
+      "description": "AI assistant automating inbound/outbound communications across calls, WhatsApp, SMS, and email, with knowledge base answers and real-time appointment booking.",
+      "features": [
+        "Designed the multi-channel communication dashboard for managing WhatsApp, SMS, voice, and email interactions",
+        "Created UX flows for AI assistant configuration, knowledge base management, and appointment booking setup",
+        "Designed responsive admin interfaces for monitoring conversation analytics and AI performance metrics",
+        "Developed wireframes and prototypes for the onboarding experience across UAE and France client variants"
+      ]
+    },
+    {
+      "name": "Tales of You – Personalized Storybook Generator",
+      "description": "AI storytelling platform turning selfies and prompts into personalized children's storybooks with custom characters, narration, and interactive flipbook reading.",
+      "features": [
+        "Designed the storybook creation wizard with a child-friendly, playful visual language and intuitive step-by-step flow",
+        "Created the interactive flipbook reading experience with page turn animations and narration controls",
+        "Designed the character customization interface for uploading selfies and selecting story themes",
+        "Built a cohesive visual identity and illustration style guide for consistent branding across the platform"
+      ]
+    }
+  ],
+  "experience": []
+}

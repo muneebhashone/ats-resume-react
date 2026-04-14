@@ -1,0 +1,66 @@
+{
+  "slug": "ahmed-hassan",
+  "personalInfo": {
+    "name": "Ahmed Hassan",
+    "designation": "Backend Developer",
+    "location": "Karachi, Pakistan"
+  },
+  "profile": "Backend Developer with over 6 years of experience designing scalable API architectures and microservices for enterprise SaaS platforms using TypeScript, Python, and Golang. Built and maintained backend systems serving thousands of concurrent users with high availability and consistent uptime. Designed real-time processing pipelines and queue-based architectures that reduced data processing latency by 40% and lowered infrastructure costs by 25%. Integrated LLM and RAG pipelines into production backends, enabling AI-driven features across B2B products. Participated in backend migrations from monoliths to microservices, improving deployment frequency and maintaining zero-downtime releases.",
+  "projectsHeading": "Key Projects",
+  "education": [],
+  "skills": [
+    {
+      "heading": "Programming Languages",
+      "skills": ["TypeScript", "Python", "Golang"]
+    },
+    {
+      "heading": "Backend Frameworks",
+      "skills": ["Node.js", "Express.js", "NestJS", "FastAPI", "Echo (Go)"]
+    },
+    {
+      "heading": "Databases & Caching",
+      "skills": ["PostgreSQL", "MongoDB", "Redis", "DynamoDB", "Pinecone"]
+    },
+    {
+      "heading": "API & Messaging",
+      "skills": ["REST APIs", "GraphQL", "gRPC", "WebSockets", "BullMQ", "RabbitMQ"]
+    },
+    {
+      "heading": "AI & LLM Integration",
+      "skills": ["LangChain", "RAG Pipelines", "OpenAI SDK", "Agentic Workflows", "Vector Databases"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Outbound Voice Agents – Lead Calling System",
+      "description": "Automated outbound calling system that dials leads from CSV uploads, follows scripted flows, and logs call outcomes in a dashboard.",
+      "features": [
+        "Designed and built the backend pipeline architecture for automated call orchestration and lead management",
+        "Integrated Twilio VoIP APIs for programmatic outbound calling with real-time call state management",
+        "Built ElevenLabs voice synthesis integration for natural-sounding AI agent conversations",
+        "Implemented queue-based processing for handling concurrent call sessions with retry logic and outcome logging"
+      ]
+    },
+    {
+      "name": "Talent Search – Natural Language Enterprise Search",
+      "description": "Recruiter tool enabling natural language queries against indexed talent databases for intelligent candidate matching.",
+      "features": [
+        "Built the NLP-powered search backend with document processing and indexing pipelines",
+        "Designed REST APIs for complex query handling supporting filters, facets, and natural language input",
+        "Implemented vector search integration for semantic matching of candidate profiles to job requirements",
+        "Optimized database queries and caching layers for sub-second search response times at scale"
+      ]
+    },
+    {
+      "name": "Dubio.ai – AI Dubbing & Voice Cloning",
+      "description": "Dubbing platform that detects speakers, clones each voice, translates dialogue, and outputs dubbed video in another language.",
+      "features": [
+        "Architected the backend orchestration pipeline for multi-stage audio/video processing workflows",
+        "Built API integrations with Coqui XTS and open-source voice models for speaker-specific voice cloning",
+        "Designed AWS-based infrastructure for scalable media processing with job queuing and progress tracking",
+        "Implemented translation pipeline APIs connecting speech-to-text, translation, and text-to-speech services"
+      ]
+    }
+  ],
+  "experience": []
+}
