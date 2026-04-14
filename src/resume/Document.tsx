@@ -33,7 +33,7 @@ Font.register({
 // Create styles
 const styles = StyleSheet.create({
   page: {
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#E4E4E4",
     paddingVertical: "10px",
     paddingHorizontal: "24px",
     fontFamily: "TimesNewRoman",
@@ -46,20 +46,20 @@ const styles = StyleSheet.create({
   },
   heading: {
     textAlign: "center",
-    fontSize: "18px",
+    fontSize: "24px",
     fontWeight: "bold",
   },
   text: {
-    fontSize: "9.5px",
+    fontSize: "12px",
   },
   textBold: {
-    fontSize: "9.5px",
+    fontSize: "12px",
     fontWeight: "bold",
   },
   rowWithGap: {
     flexDirection: "row",
     gap: "4px",
-    marginTop: "3px",
+    marginTop: "4px",
   },
 });
 
@@ -71,20 +71,20 @@ export const Section: React.FC<{
 }> = ({ children, heading }) => {
   return (
     <View
-      style={{ alignItems: "flex-start", marginTop: "8px", width: "100%" }}
+      style={{ alignItems: "flex-start", marginTop: "12px", width: "100%" }}
     >
       <View
         style={{
           borderBottom: "1px solid black",
           width: "100%",
-          marginBottom: "2px",
-          paddingBottom: "2px",
+          marginBottom: "3px",
+          paddingBottom: "3px",
         }}
       >
         <Text
           style={{
             textTransform: "uppercase",
-            fontSize: "9.5px",
+            fontSize: "12px",
             fontWeight: "bold",
           }}
         >
@@ -116,13 +116,13 @@ export const Experience = ({
       style={{
         flexDirection: "row",
         justifyContent: "space-between",
-        marginVertical: "2px",
+        marginVertical: "4px",
       }}
     >
       <View style={{ flex: "1" }}>
         <Text style={styles.textBold}>{userRole}</Text>
         <Text style={styles.text}>{company}</Text>
-        <View style={{ paddingLeft: "4px", marginTop: "3px", gap: "1px" }}>
+        <View style={{ paddingLeft: "5px", marginTop: "5px", gap: "2px" }}>
           {achievements.map((achievement) => {
             return (
               <Text style={styles.text} key={achievement}>
@@ -150,11 +150,11 @@ export const Skills = ({
   skills: string[];
 }) => {
   return (
-    <View style={{ flexDirection: "row", gap: "8px", marginVertical: "2px" }}>
-      <View style={{ width: "110px", flexShrink: 0 }}>
+    <View style={{ flexDirection: "row", gap: "16px", marginVertical: "4px" }}>
+      <View style={{ width: "150px" }}>
         <Text style={styles.textBold}>{heading}</Text>
       </View>
-      <View style={{ flex: 1 }}>
+      <View style={{ width: "450px" }}>
         <Text style={styles.text}>{skills.join(", ")}</Text>
       </View>
     </View>
@@ -177,13 +177,13 @@ export const Project = ({
   websiteLink?: string;
 }) => {
   return (
-    <View style={{ marginVertical: "2px" }}>
+    <View style={{ marginVertical: "4px" }}>
       <View style={{ flexDirection: "row", gap: "8px", alignItems: "center" }}>
         <Text style={styles.textBold}>{name}</Text>
         {stats && <Text style={styles.text}>({stats})</Text>}
       </View>
       <Text style={styles.text}>{description}</Text>
-      <View style={{ paddingLeft: "4px", marginTop: "3px", gap: "1px" }}>
+      <View style={{ paddingLeft: "5px", marginTop: "5px", gap: "2px" }}>
         {features.map((feature) => {
           return (
             <Text style={styles.text} key={feature}>
@@ -193,7 +193,7 @@ export const Project = ({
         })}
       </View>
       {(githubLink || websiteLink) && (
-        <View style={{ flexDirection: "row", gap: "8px", marginTop: "2px" }}>
+        <View style={{ flexDirection: "row", gap: "8px", marginTop: "5px" }}>
           {githubLink && (
             <Text style={styles.text}>
               <Link href={githubLink}>GitHub</Link>
@@ -267,7 +267,7 @@ export const MyDocument = ({ data }: { data: ResumeData }) => {
         <View style={styles.introSection}>
           <Text style={styles.heading}>{personalInfo.name}</Text>
           {personalInfo.designation && (
-            <Text style={{ fontSize: "11px", marginTop: "2px" }}>
+            <Text style={{ fontSize: "14px", marginTop: "2px" }}>
               {personalInfo.designation}
             </Text>
           )}
